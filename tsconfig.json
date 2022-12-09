@@ -16,6 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "~/layouts/*": ["./src/common/components/layout/*"],
       "~/styles/*": ["./src/common/styles/*"],
       "~/svg/*": ["./src/common/components/svg/*"],
       "~/types/*": ["./src/common/models/types/*"],
