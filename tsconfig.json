@@ -16,6 +16,8 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "~/enum/*": ["./src/common/enum/*"],
+      "~/hooks/*": ["./src/common/hooks/*"],
       "~/layouts/*": ["./src/common/components/layout/*"],
       "~/styles/*": ["./src/common/styles/*"],
       "~/svg/*": ["./src/common/components/svg/*"],

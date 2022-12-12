@@ -1,8 +1,7 @@
 import Head from 'next/head';
 
-import { Footer } from '~/ui/.';
-
 import { ChildProps } from '~/types/ChildProps';
+import { Footer } from '~/ui/.';
 
 const MainLayout = ({ children }: ChildProps) => {
   return (
