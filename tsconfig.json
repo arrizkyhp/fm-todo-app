@@ -16,6 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "~/context/*": ["./src/common/context/*"],
       "~/enum/*": ["./src/common/enum/*"],
       "~/hooks/*": ["./src/common/hooks/*"],
       "~/layouts/*": ["./src/common/components/layout/*"],

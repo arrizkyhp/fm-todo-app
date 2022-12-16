@@ -25,11 +25,11 @@ const useDarkMode = () => {
     }
   }, [theme]);
 
-  const handleSwitch = () => {
-    setTheme(theme === DarkMode.DARK ? DarkMode.LIGHT : DarkMode.DARK);
-  };
+  // const handleSwitch = () => {
+  //   setTheme(theme === DarkMode.DARK ? DarkMode.LIGHT : DarkMode.DARK);
+  // };
 
-  return { handleSwitch };
+  return { setTheme, theme };
 };
 
 export { useDarkMode };

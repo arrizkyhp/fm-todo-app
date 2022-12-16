@@ -1,0 +1,11 @@
+.main {
+  @apply flex flex-col justify-between 
+  min-h-screen h-full w-full
+  bg-light-desktop bg-no-repeat bg-contain;
+}
+
+:global(.dark) {
+  .main {
+    @apply bg-dark-desktop;
+  }
+}
