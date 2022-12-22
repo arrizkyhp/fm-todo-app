@@ -18,7 +18,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "sort-exports"],
   "rules": {
     "arrow-body-style": "off",
     "comma-dangle": ["error", "only-multiline"],
@@ -107,6 +107,7 @@
     ],
     "react/jsx-one-expression-per-line": "off",
     "react/react-in-jsx-scope": "off",
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "sort-exports/sort-exports": ["error", { "sortDir": "asc" }]
   }
 }
