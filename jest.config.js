@@ -21,6 +21,7 @@ module.exports = {
 
     // Handle module aliases
     '^~/components/(.*)$': '<rootDir>/src/common/components/$1',
+    '^~/context/(.*)$': '<rootDir>/src/common/context/$1',
     '^~/pages/(.*)$': '<rootDir>/src/pages/$1',
     '^~/form/(.*)$': '<rootDir>/src/common/components/ui/forms/$1',
     '^~/schemas/(.*)$': '<rootDir>/src/common/schemas/$1',

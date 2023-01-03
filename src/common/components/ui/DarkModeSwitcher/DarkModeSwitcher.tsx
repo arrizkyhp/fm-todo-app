@@ -12,7 +12,13 @@ const DarkModeSwitcher = () => {
   };
 
   return (
-    <button type="button" onClick={handleSwitch}>
+    <button
+      type="button"
+      onClick={handleSwitch}
+      aria-label={`${
+        theme === DarkMode.DARK ? 'button-switch-light' : 'button-switch-dark'
+      }`}
+    >
       {theme === DarkMode.DARK ? <SunIcon /> : <MoonIcon />}
     </button>
   );
