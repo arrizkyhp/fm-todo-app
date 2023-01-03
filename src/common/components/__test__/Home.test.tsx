@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { render } from '@testing-library/react';
 
-import { Header } from '../ui';
+import { Header, InputTodo } from '../ui';
 
 describe(Header, () => {
   it('Should display TODO header', () => {
@@ -17,5 +17,14 @@ describe(Header, () => {
     const buttonSwitch = getByRole('button', { name: /button-switch-dark/i });
 
     expect(buttonSwitch).toBeInTheDocument();
+  });
+});
+
+describe(InputTodo, () => {
+  it('Should display input todo', () => {
+    const { getByTitle } = render(<InputTodo />);
+    const inputTodo = getByTitle('input todo');
+
+    expect(inputTodo).toBeInTheDocument();
   });
 });

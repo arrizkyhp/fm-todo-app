@@ -1,0 +1,27 @@
+.form {
+  @apply relative mt-5 
+  
+  before:content-[""] before:absolute
+  before:h-6 before:w-6 before:rounded-full
+  before:border before:border-darkTheme-normal-light-grayishBlueHover 
+  before:top-5 before:left-6;
+
+  .input {
+    @apply w-full h-16 pl-[70px] rounded-[3px]
+          text-lg text-lightTheme-very-dark-grayishBlue
+          placeholder:text-lightTheme-normal-dark-grayishBlue 
+          bg-lightTheme-very-light-gray shadow;
+  }
+}
+
+:global(.dark) {
+  .form {
+    @apply before:border-darkTheme-normal-dark-gray;
+
+    .input {
+      @apply text-lightTheme-very-light-gray 
+            placeholder:text-darkTheme-normal-dark-grayishBlue  
+            bg-darkTheme-very-dark-desaturatedBlue;
+    }
+  }
+}

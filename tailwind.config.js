@@ -11,6 +11,9 @@ module.exports = {
         'dark-desktop': 'url(\'/images/bg-desktop-dark.jpg\')',
         'light-desktop': 'url(\'/images/bg-desktop-light.jpg\')',
       },
+      boxShadow: {
+        DEFAULT: '-5px 24px 30px -2px rgba(0, 0, 0, 0.25);'
+      },
       colors: {
         primary: {
           brightBlue: '#3a7bfd',
@@ -53,6 +56,7 @@ module.exports = {
               grayishBlueHover: '#e4e5f1',
             },
             dark: {
+              gray: '#37394E',
               grayishBlue: '#777a92',
             },
           },

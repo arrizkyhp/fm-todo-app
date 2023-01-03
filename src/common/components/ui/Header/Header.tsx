@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="flex justify-between">
       <h1 className="text-lightTheme-very-light-gray uppercase text-4xl font-bold tracking-[0.35em]">
-        TodoS
+        Todo
       </h1>{' '}
       <DarkModeSwitcher />
     </div>
