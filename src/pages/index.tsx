@@ -1,6 +1,5 @@
 import styles from '~/styles/Home.module.scss';
-import { Header } from '~/ui/Header';
-import { InputTodo } from '~/ui/Input';
+import { ContainerTodo, Header, InputTodo } from '~/ui/.';
 
 export default function Home() {
   return (
@@ -8,6 +7,7 @@ export default function Home() {
       <div className={styles.group}>
         <Header />
         <InputTodo />
+        <ContainerTodo />
       </div>
     </div>
   );
