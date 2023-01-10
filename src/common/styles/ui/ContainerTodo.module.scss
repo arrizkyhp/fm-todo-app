@@ -1,10 +1,10 @@
 .container {
-  @apply mt-5 py-5 w-full shadow rounded-[3px] z-50
+  @apply mt-5 w-full shadow rounded-[3px] z-50
   text-darkTheme-normal-dark-grayishBlue
   bg-lightTheme-very-light-gray;
 
   .footer {
-    @apply flex justify-between px-6 text-sm;
+    @apply flex justify-between px-6 py-5 text-sm;
 
     .filter {
       @apply flex gap-4;
@@ -28,7 +28,7 @@
 
 :global(.dark) {
   .container {
-    @apply mt-5 py-5 w-full shadow rounded-[3px] z-50
+    @apply mt-5 w-full shadow rounded-[3px] z-50
         text-darkTheme-normal-dark-grayishBlue
         bg-darkTheme-very-dark-desaturatedBlue;
 

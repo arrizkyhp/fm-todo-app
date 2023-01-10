@@ -1,0 +1,66 @@
+.container {
+  @apply flex relative;
+
+  &:hover {
+    .label {
+      .checkbox {
+        @apply bg-gradient-to-br from-gradient-from to-gradient-to;
+      }
+    }
+  }
+
+  .label {
+    @apply flex w-full justify-between items-center relative cursor-pointer pr-[25px] px-[70px] py-5 
+  text-lg;
+
+    .radio {
+      @apply absolute opacity-0 cursor-pointer h-0 w-0;
+    }
+
+    .checkbox {
+      @apply absolute left-6 h-6 w-6 p-[2px] rounded-full
+   bg-darkTheme-normal-light-grayishBlueHover 
+
+    before:content-[""] before:flex before:h-full before:w-full
+    before:bg-lightTheme-very-light-gray
+    before:rounded-full;
+    }
+
+    .text {
+      @apply text-lightTheme-very-dark-grayishBlue;
+    }
+
+    .radio:checked ~ .checkbox {
+      @apply bg-gradient-to-br from-gradient-from to-gradient-to border-none
+    after:content-[url("/images/icon-check.svg")] after:absolute
+    after:left-[6.5px] after:top-[-1px]
+    
+    before:content-[none];
+    }
+
+    .radio:checked ~ .text {
+      @apply text-lightTheme-normal-light-grayishBlue line-through;
+    }
+  }
+
+  .deleteIcon {
+    @apply absolute right-6 top-6 z-50;
+  }
+}
+
+:global(.dark) {
+  .label {
+    .checkbox {
+      @apply bg-darkTheme-normal-dark-gray
+      before:bg-darkTheme-very-dark-desaturatedBlue;
+    }
+
+    .text {
+      @apply text-lightTheme-very-light-gray;
+    }
+
+    .radio:checked ~ .text {
+      @apply text-darkTheme-normal-dark-gray;
+    }
+  }
+}

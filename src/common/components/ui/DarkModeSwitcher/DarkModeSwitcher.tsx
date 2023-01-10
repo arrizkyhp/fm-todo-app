@@ -14,6 +14,7 @@ const DarkModeSwitcher = () => {
   return (
     <button
       type="button"
+      title="Dark mode switch"
       onClick={handleSwitch}
       aria-label={`${
         theme === DarkMode.DARK ? 'button-switch-light' : 'button-switch-dark'
