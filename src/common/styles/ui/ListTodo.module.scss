@@ -1,5 +1,5 @@
 .container {
-  @apply flex relative;
+  @apply flex relative border-b border-lightTheme-normal-light-grayishBlue;
 
   &:hover {
     .label {
@@ -49,18 +49,22 @@
 }
 
 :global(.dark) {
-  .label {
-    .checkbox {
-      @apply bg-darkTheme-normal-dark-gray
-      before:bg-darkTheme-very-dark-desaturatedBlue;
-    }
+  .container {
+    @apply border-border-dark;
 
-    .text {
-      @apply text-lightTheme-very-light-gray;
-    }
+    .label {
+      .checkbox {
+        @apply bg-darkTheme-normal-dark-gray
+        before:bg-darkTheme-very-dark-desaturatedBlue;
+      }
 
-    .radio:checked ~ .text {
-      @apply text-darkTheme-normal-dark-gray;
+      .text {
+        @apply text-lightTheme-very-light-gray;
+      }
+
+      .radio:checked ~ .text {
+        @apply text-darkTheme-normal-dark-gray;
+      }
     }
   }
 }

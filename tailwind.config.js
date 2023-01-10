@@ -22,6 +22,9 @@ module.exports = {
           from: '#57ddff',
           to: '#c058f3',
         },
+        border: {
+          dark: '#484b6a',
+        },
         lightTheme: {
           very: {
             light: {
