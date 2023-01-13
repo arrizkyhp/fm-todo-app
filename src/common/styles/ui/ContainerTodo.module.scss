@@ -3,6 +3,12 @@
   text-darkTheme-normal-dark-grayishBlue
   bg-lightTheme-very-light-gray;
 
+  .noTodo {
+    @apply flex text-center justify-center 
+    w-full px-6 py-4 
+    border-b border-lightTheme-normal-light-grayishBlue;
+  }
+
   .footer {
     @apply flex justify-between px-6 py-5 text-sm;
 
@@ -31,6 +37,10 @@
     @apply mt-5 w-full shadow rounded-[3px] z-50
         text-darkTheme-normal-dark-grayishBlue
         bg-darkTheme-very-dark-desaturatedBlue;
+
+    .noTodo {
+      @apply border-border-dark;
+    }
 
     .footer {
       .filter {

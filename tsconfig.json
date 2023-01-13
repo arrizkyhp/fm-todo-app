@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "~/context/*": ["./src/common/context/*"],
+      "~/constants/*": ["./src/common/constants/*"],
       "~/enum/*": ["./src/common/enum/*"],
       "~/hooks/*": ["./src/common/hooks/*"],
       "~/layouts/*": ["./src/common/components/layout/*"],
